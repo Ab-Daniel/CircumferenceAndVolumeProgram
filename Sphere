@@ -1,0 +1,27 @@
+
+public class Sphere 
+{
+	
+	public Sphere (double radiusForSmoreCalculating)
+	{
+		
+		radius = radiusForSmoreCalculating;
+		
+	}
+	
+	public double surfaceArea ()
+	{
+		
+		return 4 * Math.PI * (radius * radius);
+		
+	}
+	
+	public double volume ()
+	{
+		
+		return 4/3 * Math.PI * (radius * radius * radius);
+		
+	}
+	
+	private double radius;
+}
