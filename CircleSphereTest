@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class CircleSphereTest {
+
+	public static void main(String[] args) 
+	{
+		
+		double radius  = Double.parseDouble(JOptionPane.showInputDialog("Enter a double for radius")); //user input for the radius
+		Circle cirleInfo = new Circle (radius); 
+		Sphere sphereInfo = new Sphere(radius);
+		
+		System.out.println("Radius: " + radius);
+		System.out.println("Area of the circle: " + cirleInfo.area());
+		System.out.println("Circumference of the circle: " + cirleInfo.circumference());
+		System.out.println("");
+		System.out.println("Volume of the sphere: " + sphereInfo.volume());
+		System.out.println("Surface area of the sphere: " + sphereInfo.surfaceArea());
+		
+	}
+
+}
